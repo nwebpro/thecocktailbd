@@ -13,9 +13,9 @@ const displayCocktailData = drinks => {
     // Not Found Message
     const noDrinks = document.getElementById('not-found-message');
     if(drinks === null){
-        noDrinks.classList.remove('d-none');
+        noDrinks.classList.remove('hidden');
     }else{
-        noDrinks.classList.add('d-none');
+        noDrinks.classList.add('hidden');
     }
 
     drinks.forEach(drink => {
